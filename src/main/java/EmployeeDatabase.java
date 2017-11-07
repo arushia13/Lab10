@@ -15,6 +15,7 @@ public class EmployeeDatabase {
     /**
      * List of employees.
      */
+    @SuppressWarnings("checkstyle:visibilitymodifier")
     public List<Employee> employees;
 
     /**
@@ -30,10 +31,10 @@ public class EmployeeDatabase {
     /**
      * Returns the manager for the given employee.
      *
-     * @param employee
-     * @return
+     * @param employee the employee being looked at
+     * @return manager the manager for the given employee
      */
-    Employee findManager(final Employee employee) {
+    final Employee findManager(final Employee employee) {
         Employee manager = null;
         for (int i = 0; i < employees.size(); i++) {
             if (employees.get(i).getName() == employee.getManager()) {
@@ -53,9 +54,8 @@ public class EmployeeDatabase {
      * @return int
      */
     public int countManagersAbove(final Employee employee) {
-        /*
-         * Implement this function
-         */
+        int count = 0;
+        return count;
     }
 
     /**
@@ -67,9 +67,13 @@ public class EmployeeDatabase {
      * @return int
      */
     public int countEmployeesUnder(final Employee employee) {
+        int count = 0;
+
         /*
          * Implement this function
          */
+
+        return count;
     }
 
     /**
